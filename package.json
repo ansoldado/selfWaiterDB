@@ -1,0 +1,13 @@
+{
+  "name": "pruebaApiREST",
+  "version": "0.0.1",
+  "description": "Prueba de una API REST para la asignatura de PIN y la aplicacion SelfWaiter.",
+  "main": "server.js",
+  "dependencies":{
+    "express": "latest",
+    "mongoose": "latest",
+    "body-parser": "latest",
+    "method-override": "latest"
+
+  }
+}

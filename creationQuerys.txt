@@ -1,0 +1,7 @@
+{
+name": "ElBar",
+"type": "Premium",
+"address": {
+"mail": "elbar@mail.com"
+}
+}
