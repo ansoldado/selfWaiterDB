@@ -21,5 +21,5 @@ app.get("/", function(req, res){
 });
 require("./routes")(app);
 
-app.listen(5000);
+app.listen(process.env.PORT || 5000);
 console.log("Server Escuchando en puerto 5000.");
