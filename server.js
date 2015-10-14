@@ -4,7 +4,7 @@ var bodyParser = require("body-parser");
 var methodOverride = require("method-override");
 var app = express();
 
-mongoose.connect("mongodb://localhost/restorationLocal", function(err, res){
+mongoose.connect("mongodb://selfwaiterdb:selfwaiter1@ds037814.mongolab.com:37814/heroku_v3hmj82h", function(err, res){
     if(err){
         console.log("Error conectando a DB: "+err);
     }else{
@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 app.use(methodOverride());
 
 app.get("/", function(req, res){
-    res.send("Hola Mundo!");
+    res.send("SelfWaiter RLZ!");
 });
 require("./routes")(app);
 
