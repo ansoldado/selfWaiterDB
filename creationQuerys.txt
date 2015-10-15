@@ -40,8 +40,18 @@ PRODUCTOS:
 
 PEDIDO:
 {
-“name”:”Producto1”,
-“name”:”Producto1”,
-“name”:”Producto1”,
-“name”:”Producto1”
+“tableId”:”561e393a075d6c1100191266”,
+“waiter”:”561fcb0a38c79c1100dc61e2”,
+“products”:[{
+“productId”: “561fce6d38c79c1100dc61e8”,
+“quantity”: “2”,
+“status”:”Pedido” 
+},
+{
+“productId”: “561fceb838c79c1100dc61eb”,
+“quantity”: “1”,
+“status”:”Pedido” 
+}
+],
+“status”:”Activo”
 }

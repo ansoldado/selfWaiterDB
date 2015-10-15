@@ -1,7 +1,7 @@
 var mongoose = require("mongoose"),
     Schema = mongoose.Schema;
 var Product = require("./product.js");
-var Product = require("./table.js");
+var Table = require("./table.js");
 
 
 var productInOrder = new Schema({
@@ -25,7 +25,8 @@ var order = new Schema({
     products: [productInOrder],
     status: {
         type: String,
-        enum: ["Activo", "Finalizado"]
+        enum: ["Activo", "Finalizado"],
+        default: "Activo"
     }
 });
 
