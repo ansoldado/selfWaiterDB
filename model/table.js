@@ -14,6 +14,10 @@ var table = new Schema({
     },
     qrString: {
         type:  String
+    },
+    orderId: {
+        type: String,
+        default: null
     }
 });
 

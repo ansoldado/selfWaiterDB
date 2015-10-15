@@ -1,7 +1,47 @@
+LOCALES:
+
 {
-name": "ElBar",
+"name": "ElBar",
 "type": "Premium",
 "address": {
 "mail": "elbar@mail.com"
 }
+}
+
+USUARIOS:
+{
+"name": "User2",
+"pwd": "1234",
+"address":{
+"mail": "User2@mail.com"
+}
+}
+
+CAMAREROS: 
+{
+“localId”: "561e393a075d6c1100191266",
+“user”: "561fcb0a38c79c1100dc61e2"
+}
+
+MESAS:
+{
+“localId”:”561e393a075d6c1100191266” ,
+“waiterId”:”561fcb0a38c79c1100dc61e2” ,
+“qrString”:”qrMesa1“
+}
+
+PRODUCTOS:
+{
+“name”:”Producto1”,
+“category”:”Bebida”,
+“price”:”1.5”,
+“localId”:”561e393a075d6c1100191266”
+}
+
+PEDIDO:
+{
+“name”:”Producto1”,
+“name”:”Producto1”,
+“name”:”Producto1”,
+“name”:”Producto1”
 }

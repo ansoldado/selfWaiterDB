@@ -1,8 +1,13 @@
 var mongoose = require("mongoose"),
     Schema = mongoose.Schema;
+var Product = require("./product.js");
+var Product = require("./table.js");
+
 
 var productInOrder = new Schema({
-    productId: Schema.Types.ObjectId,
+    productId: {
+    type: Schema.ObjectId, ref: "Product"
+    },
     quantity: Number,
     status: {
         type: String,
@@ -11,13 +16,17 @@ var productInOrder = new Schema({
 })
 
 var order = new Schema({
-    localID: {
-        type: Schema.Types.ObjectId,
+    tableId: {
+        type: Schema.ObjectId, ref: "Table",
         required: true
     },
-    waiter: Schema.Types.ObjectId,
+    waiter: Schema.ObjectId,
     creationDate: { type: Date, default: Date.now },
-    products: [productInOrder]
+    products: [productInOrder],
+    status: {
+        type: String,
+        enum: ["Activo", "Finalizado"]
+    }
 });
 
 module.exports = mongoose.model("Order", order);

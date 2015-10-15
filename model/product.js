@@ -13,9 +13,6 @@ var product = new Schema({
     price: {
         type: Number
     },
-    quantity: {
-        type: Number
-    },
     localId: {
         type: Schema.ObjectId, ref: "RestorationLocal",
         required: true
