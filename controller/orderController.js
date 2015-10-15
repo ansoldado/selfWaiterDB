@@ -27,7 +27,8 @@ var addOrder = function(req, res){
     var order = new Order({
         localID: req.body.localID,
         waiter: req.body.waiter,
-        products: req.body.products
+        products: req.body.products,
+        tableId: req.body.tableId
     });
 
     order.save(function(err){
@@ -47,6 +48,8 @@ var updateOrder = function(req, res){
         localID: req.body.localID;
         waiter: req.body.waiter;
         products: req.body.products;
+        tableId: req.body.tableId
+
 
         order.save(function(err){
             if(!err){
