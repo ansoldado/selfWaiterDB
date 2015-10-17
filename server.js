@@ -13,7 +13,11 @@ mongoose.connect("mongodb://user:user@ds037814.mongolab.com:37814/heroku_v3hmj82
 });
 app.use(function(req, res, next){
     res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+    next();
 });
+
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(methodOverride());
