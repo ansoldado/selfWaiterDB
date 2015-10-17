@@ -11,7 +11,9 @@ mongoose.connect("mongodb://user:user@ds037814.mongolab.com:37814/heroku_v3hmj82
         console.log("Conectado a DB.")
     }
 });
-
+app.use(function(req, res, next){
+    res.setHeader('Access-Control-Allow-Origin', '*');
+});
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(methodOverride());
