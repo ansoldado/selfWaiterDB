@@ -2,7 +2,7 @@ var Order = require("../model/order.js");
 
 //GET All Orders
 var getAllOrders = function(req, res){
-    Order.find(function(err, orders){
+    Order.find.populate("products").exec(function(err, orders){
         if (!err) {
             res.send(orders);
         } else {
