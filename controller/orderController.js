@@ -58,8 +58,8 @@ var updateOrder = function(req, res){
     Order.findById(req.params.id, function(err, order){
         localID: req.body.localID;
         waiter: req.body.waiter;
-        tableId: req.body.tableId;
-        orderId: req.body.orderId;
+        products: req.body.products;
+        tableId: req.body.tableId
 
 
         order.save(function(err){
