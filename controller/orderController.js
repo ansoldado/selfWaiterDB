@@ -91,6 +91,7 @@ var removeOrder = function(req, res){
 module.exports = {
     getAllOrders: getAllOrders,
     getOrderById: getOrderById,
+    getOrderByTable: getOrderByTable,
     addOrder: addOrder,
     updateOrder: updateOrder,
     removeOrder: removeOrder

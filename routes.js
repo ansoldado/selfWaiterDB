@@ -18,7 +18,7 @@ module.exports = function(app){
 
     //orders
     app.get("/orders", orderController.getAllOrders);
-    app.get("/orders/table/:tableId", orderController.getOrdersByTable);
+    app.get("/orders/table/:tableId", orderController.getOrderByTable);
     app.get("/orders/:id", orderController.getOrderById);
     app.post("/orders", orderController.addOrder);
     app.put("/orders/:id", orderController.updateOrder);

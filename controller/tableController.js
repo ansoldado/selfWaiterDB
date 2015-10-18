@@ -93,6 +93,7 @@ var updateTable = function (req, res){
 module.exports = {
     getAllTables: getAllTables,
     getTableById: getTableById,
+    getTablesByWaiter: getTablesByWaiter,
     addTable: addTable,
     removeTable: removeTable,
     updateTable: updateTable
