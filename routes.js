@@ -18,6 +18,7 @@ module.exports = function(app){
 
     //orders
     app.get("/orders", orderController.getAllOrders);
+    app.get("/orders/table/:tableId", orderController.getOrdersByTable);
     app.get("/orders/:id", orderController.getOrderById);
     app.post("/orders", orderController.addOrder);
     app.put("/orders/:id", orderController.updateOrder);
@@ -41,6 +42,7 @@ module.exports = function(app){
     //tables
     app.get("/tables", tableController.getAllTables);
     app.get("/tables/:id", tableController.getTableById);
+    app.get("/tables/waiter/:waiterId", tableController.getTablesByWaiter);
     app.post("/tables", tableController.addTable);
     app.put("/tables/:id", tableController.updateTable);
     app.delete("/tables/:id", tableController.removeTable);

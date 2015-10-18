@@ -22,6 +22,17 @@ var getOrderById = function(req, res){
     });
 };
 
+var getOrderByTable = function(req, res){
+    Order.find({'tableId': req.params.id, 'status': 'Activo'}, function(err, order){
+        if(!err){
+            res.send(order)
+        }else{
+            console.log("ERROR getOrderByTable" + err);
+            res.send(null);
+        }
+    });
+};
+
 //POST Add Order
 var addOrder = function(req, res){
     var order = new Order({

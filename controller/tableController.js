@@ -24,6 +24,16 @@ var getTableById = function (req, res){
     });
 };
 
+var getTablesByWaiter = function(req, res){
+    Table.find({"waiterId": req.params.waiterId}, function (err, tables){
+        if(!err){
+            res.send(tables);
+        }else{
+            console.log("ERROR getTablesByWaiter" + err);
+        }
+    });
+};
+
 var addTable = function (req, res){
     var table = new Table({
         localId: req.body.localId,
