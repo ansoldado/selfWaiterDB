@@ -67,6 +67,7 @@ var updateProduct = function (req, res){
             product.price = req.body.price;
             product.quantity = req.body.quantity;
             product.localId = req.body.localId;
+            product.products = req.body.products;
             product.save(function(errSaveProduct){
                 if(!errSaveProduct){
                     res.send(product);
