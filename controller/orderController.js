@@ -59,7 +59,8 @@ var updateOrder = function(req, res){
         localID: req.body.localID;
         waiter: req.body.waiter;
         products: req.body.products;
-        tableId: req.body.tableId
+        tableId: req.body.tableId;
+        orderId: req.body.orderId;
 
 
         order.save(function(err){
