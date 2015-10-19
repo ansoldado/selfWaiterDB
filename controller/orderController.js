@@ -23,7 +23,7 @@ var getOrderById = function(req, res){
 };
 
 var getOrderByTable = function(req, res){
-    Order.find({'tableId': req.params.id, 'status': 'Activo'}, function(err, order){
+    Order.find({'tableId': req.params.tableId, 'status': 'Activo'}, function(err, order){
         if(!err){
             res.send(order)
         }else{
