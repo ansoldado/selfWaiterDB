@@ -13,7 +13,7 @@ var getAllOrders = function(req, res){
 
 //GET Order by Id
 var getOrderById = function(req, res){
-    Order.findById(req.params.id, function(err, order){
+    Order.find({"_id": req.params.id}).populate("products.productId").exec(function(err, order){
         if (!err) {
             res.send(order);
         }else{
