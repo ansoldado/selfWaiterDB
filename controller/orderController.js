@@ -56,10 +56,10 @@ var addOrder = function(req, res){
 //PUT UpdateOrder
 var updateOrder = function(req, res){
     Order.findById(req.params.id, function(err, order){
-        order.localID: req.body.localID;
-        order.waiter: req.body.waiter;
-        order.products: req.body.products;
-        order.tableId: req.body.tableId
+        order.localID = req.body.localID;
+        order.waiter = req.body.waiter;
+        order.products = req.body.products;
+        order.tableId = req.body.tableId
 
 
         order.save(function(err){
