@@ -21,7 +21,8 @@ var table = new Schema({
     },
     estado: {
         type: String,
-        enum: ['ocupada', 'libre', 'reservada', 'pendienteLiberar']
+        enum: ['ocupada', 'libre', 'reservada', 'pendienteLiberar'],
+        default: 'libre'
     }
 });
 
