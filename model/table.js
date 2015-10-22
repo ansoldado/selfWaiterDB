@@ -18,6 +18,10 @@ var table = new Schema({
     orderId: {
         type: String,
         default: null
+    },
+    estado: {
+        type: String,
+        enum: ['ocupada', 'libre', 'reservada', 'pendienteLiberar']
     }
 });
 
