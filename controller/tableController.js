@@ -77,7 +77,7 @@ var updateTable = function (req, res){
             table.qrString = req.body.qrString;
             table.orderId = req.body.orderId;
             table.estado = req.body.estado;
-            
+
             table.save(function(errSaveTable){
                 if(!errSaveTable){
                     res.send(table);
