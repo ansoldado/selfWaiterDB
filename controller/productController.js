@@ -28,7 +28,7 @@ var addProduct = function (req, res){
         name: req.body.name,
         category: req.body.category,
         price: req.body.price,
-        quantity: req.body.quantity,
+//        quantity: req.body.quantity,
         localId: req.body.localId
     });
 

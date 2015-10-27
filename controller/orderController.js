@@ -1,5 +1,5 @@
 var Order = require("../model/order.js");
-
+var Table = require("../model/table.js");
 //GET All Orders
 var getAllOrders = function(req, res){
     Order.find().populate("products.productId").exec(function(err, orders){
@@ -45,6 +45,12 @@ var addOrder = function(req, res){
     order.save(function(err){
         if(!err){
             console.log("Order Guardado.");
+            Table.findById(req.body.tableId, function(errT, table){
+                table.orderId = order._id;
+                table.save(function (err){
+
+                });
+            });
         }else {
             console.log("ERROR addOrder: "+ err);
         }
@@ -59,7 +65,7 @@ var updateOrder = function(req, res){
         order.localID = req.body.localID;
         order.waiter = req.body.waiter;
         order.products = req.body.products;
-        order.tableId = req.body.tableId
+        order.tableId = req.body.tableId;
 
 
         order.save(function(err){
