@@ -2,7 +2,7 @@ var Rating = require("../model/rating.js");
 
 //GET All Ratings
 var getAllRatings = function(req, res){
-    Ratings.find().populate("restaurantRating").exec(function(err, ratings){
+    Rating.find().populate("restaurantRating").exec(function(err, ratings){
         if (!err) {
             res.send(ratings);
         } else {
@@ -80,12 +80,12 @@ var addRating = function(req, res){
 //PUT updateRating
 var updateRating = function(req, res){
     Rating.findById(req.params.id, function(err, rating){
-        rating.userId = req.body.userId;
-        rating.orderId =req.body.orderId;
-        rating.localId = req.body.localId;
-        rating.restaurantRating = req.body.restaurantRating;
-        rating.foodRating = req.body.foodRating;
-        rating.comments = req.body.comments;
+        rating.userId:req.body.userId,
+        rating.orderId:req.body.orderId,
+        rating.localId: req.body.localId,
+        rating.restaurantRating: req.body.restaurantRating,
+        rating.foodRating: req.body.foodRating,
+        rating.comments: req.body.comments
 
 
         rating.save(function(err){
