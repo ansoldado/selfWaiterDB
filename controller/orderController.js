@@ -1,5 +1,5 @@
 var Order = require("../model/order.js");
-var Table = require("../model/table.js");
+
 //GET All Orders
 var getAllOrders = function(req, res){
     Order.find().populate("products.productId").exec(function(err, orders){
@@ -10,6 +10,20 @@ var getAllOrders = function(req, res){
         }
     });
 };
+
+//GET All Orders between dates
+var getOrderBetweenDates= function(req,res){
+    Order.find({'CreationDate': {
+            $gte: ISODate(req.body.before)
+        }, 'status': 'Finalizado'
+    }).exec(function(err, order){
+        if (!err) {
+            res.send(order);
+        }else{
+            console.log("ERROR getOrderById: " + err);
+        }
+    });
+}
 
 //GET Order by Id
 var getOrderById = function(req, res){
@@ -45,12 +59,6 @@ var addOrder = function(req, res){
     order.save(function(err){
         if(!err){
             console.log("Order Guardado.");
-            Table.findById(req.body.tableId, function(errT, table){
-                table.orderId = order._id;
-                table.save(function (err){
-
-                });
-            });
         }else {
             console.log("ERROR addOrder: "+ err);
         }
@@ -65,7 +73,7 @@ var updateOrder = function(req, res){
         order.localID = req.body.localID;
         order.waiter = req.body.waiter;
         order.products = req.body.products;
-        order.tableId = req.body.tableId;
+        order.tableId = req.body.tableId
 
 
         order.save(function(err){
@@ -96,6 +104,7 @@ var removeOrder = function(req, res){
 
 module.exports = {
     getAllOrders: getAllOrders,
+    getOrderBetweenDates: getOrderBetweenDates,
     getOrderById: getOrderById,
     getOrderByTable: getOrderByTable,
     addOrder: addOrder,

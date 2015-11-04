@@ -28,7 +28,7 @@ var addProduct = function (req, res){
         name: req.body.name,
         category: req.body.category,
         price: req.body.price,
-//        quantity: req.body.quantity,
+        quantity: req.body.quantity,
         localId: req.body.localId
     });
 
@@ -65,7 +65,7 @@ var updateProduct = function (req, res){
         if(!err){
             product.name = req.body.name;
             product.price = req.body.price;
-     //       product.quantity = req.body.quantity;
+            product.quantity = req.body.quantity;
             product.localId = req.body.localId;
             product.products = req.body.products;
             product.save(function(errSaveProduct){

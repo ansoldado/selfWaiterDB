@@ -5,6 +5,7 @@ module.exports = function(app){
     var waiterController = require("./controller/waiterController");
     var productController = require("./controller/productController");
     var tableController = require("./controller/tableController");
+    var ratingController = require("./controller/ratingController");
 
     //API routes
 
@@ -19,6 +20,7 @@ module.exports = function(app){
     //orders
     app.get("/orders", orderController.getAllOrders);
     app.get("/orders/table/:tableId", orderController.getOrderByTable);
+    app.get("/orders/time/:before", orderController.getOrderBetweenDates)
     app.get("/orders/:id", orderController.getOrderById);
     app.post("/orders", orderController.addOrder);
     app.put("/orders/:id", orderController.updateOrder);
@@ -52,5 +54,15 @@ module.exports = function(app){
     app.get("/waiters/:id", waiterController.getWaiterById);
     app.post("/waiters", waiterController.addWaiter);
     app.delete("/waiters/:id", waiterController.removeWaiter);
+
+    //rating
+    app.get("/ratings", ratingController.getAllRatings);
+    app.get("/ratings/:id", ratingController.getRatingById);
+    app.get("/ratings/user/:userId", ratingController.getRatingsByUserId);
+    app.get("/ratings/local/:localId", ratingController.getRatingsByLocalId);
+    app.get("/ratings/order/:orderId", ratingController.getRatingsByOrderId);
+    app.post("/ratings", ratingController.addRating);  
+    app.put("/ratings/:id", ratingController.updateRating);
+    app.delete("/ratings/:id", ratingController.removeRating);
 
 }
