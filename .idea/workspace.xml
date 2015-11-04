@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f7c164c5-7372-4995-95ce-9ad7067c0f6d" name="Default" comment="" />
+    <list default="true" id="f7c164c5-7372-4995-95ce-9ad7067c0f6d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/ratingController.js" afterPath="$PROJECT_DIR$/controller/ratingController.js" />
+    </list>
     <ignored path="selfWaiterDB.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,8 +46,8 @@
       <file leaf-file-name="ratingController.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controller/ratingController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6196581">
-              <caret line="87" column="44" selection-start-line="87" selection-start-column="44" selection-end-line="87" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.51282054">
+              <caret line="82" column="40" selection-start-line="82" selection-start-column="40" selection-end-line="82" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -67,7 +69,7 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
-                <marker date="1446655833000" expanded="true" signature="30:3138" placeholder="{...}" />
+                <marker date="1446657032000" expanded="true" signature="30:3138" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -653,7 +655,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
-            <marker date="1446655833000" expanded="true" signature="30:3138" placeholder="{...}" />
+            <marker date="1446657032000" expanded="true" signature="30:3138" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -708,8 +710,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/ratingController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6196581">
-          <caret line="87" column="44" selection-start-line="87" selection-start-column="44" selection-end-line="87" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.51282054">
+          <caret line="82" column="40" selection-start-line="82" selection-start-column="40" selection-end-line="82" selection-end-column="40" />
           <folding />
         </state>
       </provider>
