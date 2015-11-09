@@ -7,20 +7,23 @@ var restorationLocal = require("./restorationLocal.js");
 
 var rating = new Schema({
     userId: {
-        type: Schema.ObjectId, ref: "User",
-        required: true
+        type: String
     },
     orderId: {
-        type: Schema.ObjectId, ref: "Order",
-        required: true
+        type: String
     },
     localId: {
-        type: Schema.ObjectId, ref: "restorationLocal",
-        required: true
+        type: String
     },
-    restaurantRating: String,
-    foodRating: String,
-    comments: String,
+    restaurantRating: {
+        type: String
+    },
+    foodRating: {
+        type: String
+    },
+    comments: {
+        type: String
+    },
     creationDate: { type: Date, default: Date.now }
 });
 
