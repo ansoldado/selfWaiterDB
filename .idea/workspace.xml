@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f7c164c5-7372-4995-95ce-9ad7067c0f6d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/restorationLocalController.js" afterPath="$PROJECT_DIR$/controller/restorationLocalController.js" />
-    </list>
+    <list default="true" id="f7c164c5-7372-4995-95ce-9ad7067c0f6d" name="Default" comment="" />
     <ignored path="selfWaiterDB.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -88,7 +86,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="1" column="41" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="41" />
-              <folding />
+              <folding>
+                <marker date="1447167744000" expanded="true" signature="667:915" placeholder="{...}" />
+                <marker date="1447167744000" expanded="true" signature="699:716" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -680,7 +681,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1" column="41" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="41" />
-          <folding />
+          <folding>
+            <marker date="1447167744000" expanded="true" signature="667:915" placeholder="{...}" />
+            <marker date="1447167744000" expanded="true" signature="699:716" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
