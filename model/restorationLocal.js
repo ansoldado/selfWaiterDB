@@ -8,7 +8,7 @@ var restorationLocal = new Schema({
         required: true
     },
     address: {
-        type: Schema.ObjectId, ref: 'address' ,
+        type: String ,
         required: true
     },
     type: {
