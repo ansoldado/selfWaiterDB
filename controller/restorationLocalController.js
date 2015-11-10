@@ -26,7 +26,7 @@ var getLocalById = function(req, res){
 
 //POST addRestorationLocal
 var addRestorationLocal = function(req, res){
-    var address = new Address({
+    /*var address = new Address({
         road: req.body.address.road,
         roadType: req.body.address.roadType,
         number: req.body.address.number,
@@ -38,7 +38,7 @@ var addRestorationLocal = function(req, res){
     address.save(function(err){
        if(!err){
            console.log("Address guardada: %s .", address._id);
-
+*/
            var local = new RestorationLocal({
                name: req.body.name,
                address: address._id,
@@ -59,11 +59,11 @@ var addRestorationLocal = function(req, res){
                    console.log("ERROR addRestorationLocal: "+ err);
                }
            });
-
+/*
            res.send(local);
        } else{
            console.log("ERROR addRestorationLocal: "+ err);
-       }
+       }*/
     });
 };
 
