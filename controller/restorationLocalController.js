@@ -41,7 +41,7 @@ var addRestorationLocal = function(req, res){
 */
            var local = new RestorationLocal({
                name: req.body.name,
-               address: address._id,
+               address: req.body.address,
                type: req.body.type
            });
 
