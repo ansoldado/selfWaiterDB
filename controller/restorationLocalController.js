@@ -49,13 +49,7 @@ var addRestorationLocal = function(req, res){
                if(!err){
                    console.log("Local Guardado.");
                }else {
-                   address.remove(function(err){
-                       if(!err){
-                           console.log("Address borrada: %s .", address._id);
-                       } else{
-                           console.log("ERROR addRestorationLocal: "+ err);
-                       }
-                   });
+
                    console.log("ERROR addRestorationLocal: "+ err);
                }
            });
