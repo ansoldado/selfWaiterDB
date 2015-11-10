@@ -1,28 +1,34 @@
 var mongoose = require("mongoose"),
     Schema = mongoose.Schema;
-var Order = require("./order.js");
-var User = require("./user.js");
-var restorationLocal = require("./restorationLocal.js");
 
+var valoracionComida = new Schema({
+    productId: String,
+    nombre: String,
+    label: Number,
+    valoracion: String
+})
 
 var rating = new Schema({
     userId: {
-        type: String
+        type: String,
+        required: true
     },
     orderId: {
-        type: String
+        type: String,
+        required: true
     },
     localId: {
-        type: String
+        type: String,
+        required: true
     },
     restaurantRating: {
-        type: String
+        type: String,
+        required: true
     },
-    foodRating: {
-        type: String
-    },
+    foodRating: [valoracionComida],
     comments: {
-        type: String
+        type: String,
+        required: true
     },
     creationDate: { type: Date, default: Date.now }
 });

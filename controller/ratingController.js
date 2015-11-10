@@ -2,7 +2,7 @@ var Rating = require("../model/rating.js");
 
 //GET All Ratings
 var getAllRatings = function(req, res){
-    Rating.find(function(err, ratings){
+    Rating.find().populate("restaurantRating").exec(function(err, ratings){
         if (!err) {
             res.send(ratings);
         } else {
