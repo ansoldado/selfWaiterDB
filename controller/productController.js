@@ -25,11 +25,7 @@ var getProductById = function (req, res){
 
 var addProduct = function (req, res){
     var product = new Product({
-        name: req.body.name,
-        category: req.body.category,
-        price: req.body.price,
-        quantity: req.body.quantity,
-        localId: req.body.localId
+        X
     });
 
     product.save(function(err){
