@@ -64,7 +64,6 @@ var addRestorationLocal = function(req, res){
        } else{
            console.log("ERROR addRestorationLocal: "+ err);
        }*/
-    });
 };
 
 //PUT UpdateRestorationLocal
