@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7c164c5-7372-4995-95ce-9ad7067c0f6d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/rating.js" afterPath="$PROJECT_DIR$/model/rating.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/ratingController.js" afterPath="$PROJECT_DIR$/controller/ratingController.js" />
     </list>
     <ignored path="selfWaiterDB.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ratingController.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ratingController.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controller/ratingController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.06392045">
+              <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -63,10 +63,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rating.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="rating.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/rating.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3409091">
+            <state vertical-scroll-proportion="0.0">
               <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
               <folding />
             </state>
@@ -143,10 +143,10 @@
         <option value="$PROJECT_DIR$/controller/productController.js" />
         <option value="$PROJECT_DIR$/controller/orderController.js" />
         <option value="$PROJECT_DIR$/model/order.js" />
-        <option value="$PROJECT_DIR$/controller/ratingController.js" />
         <option value="$PROJECT_DIR$/model/restorationLocal.js" />
         <option value="$PROJECT_DIR$/controller/restorationLocalController.js" />
         <option value="$PROJECT_DIR$/model/rating.js" />
+        <option value="$PROJECT_DIR$/controller/ratingController.js" />
       </list>
     </option>
   </component>
@@ -706,18 +706,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/ratingController.js">
+    <entry file="file://$PROJECT_DIR$/model/rating.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/rating.js">
+    <entry file="file://$PROJECT_DIR$/controller/ratingController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3409091">
-          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.06392045">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
           <folding />
         </state>
       </provider>
