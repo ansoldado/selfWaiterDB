@@ -4,7 +4,7 @@ var mongoose = require("mongoose"),
 var valoracionComida = new Schema({
     productId: String,
     nombre: String,
-    label: Number,
+    label: String,
     valoracion: String
 })
 
