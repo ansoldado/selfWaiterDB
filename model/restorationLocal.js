@@ -5,13 +5,16 @@ var address = require("./address.js");
 var restorationLocal = new Schema({
     name: {
         type: String,
+        required: true
     },
     address: {
-        type: String ,
+        type: Schema.ObjectId, ref: 'address' ,
+        required: true
     },
     type: {
         type: String,
         enum: ["Premium", "Normal"],
+        required: true
     }
 });
 
