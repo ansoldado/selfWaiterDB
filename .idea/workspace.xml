@@ -4,7 +4,6 @@
     <list default="true" id="f7c164c5-7372-4995-95ce-9ad7067c0f6d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/product.js" afterPath="$PROJECT_DIR$/model/product.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/productController.js" afterPath="$PROJECT_DIR$/controller/productController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="selfWaiterDB.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -88,8 +87,8 @@
       <file leaf-file-name="productController.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controller/productController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5952381">
-              <caret line="66" column="64" selection-start-line="66" selection-start-column="64" selection-end-line="66" selection-end-column="64" />
+            <state vertical-scroll-proportion="-0.7380952">
+              <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -99,7 +98,7 @@
         <entry file="file://$PROJECT_DIR$/model/product.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+              <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -702,15 +701,15 @@
     <entry file="file://$PROJECT_DIR$/model/product.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/productController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5952381">
-          <caret line="66" column="64" selection-start-line="66" selection-start-column="64" selection-end-line="66" selection-end-column="64" />
+        <state vertical-scroll-proportion="-0.7380952">
+          <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
           <folding />
         </state>
       </provider>

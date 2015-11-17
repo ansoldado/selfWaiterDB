@@ -16,6 +16,9 @@ var product = new Schema({
     quantity: {
         type: Number
     },
+    available: {
+        type: Boolean
+    },
     localId: {
         type: Schema.ObjectId, ref: "RestorationLocal"
     }

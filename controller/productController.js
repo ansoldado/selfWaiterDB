@@ -30,6 +30,8 @@ var addProduct = function (req, res){
         quantity : req.body.quantity,
         localId : req.body.localId,
         category : req.body.category
+        available : req.body.available
+
     });
 
     product.save(function(err){
@@ -68,6 +70,8 @@ var updateProduct = function (req, res){
             product.quantity = req.body.quantity;
             product.localId = req.body.localId;
             product.category = req.body.category;
+            product.available= req.body.available;
+
             product.save(function(errSaveProduct){
                 if(!errSaveProduct){
                     res.send(product);
