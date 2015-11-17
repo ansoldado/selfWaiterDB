@@ -25,7 +25,11 @@ var getProductById = function (req, res){
 
 var addProduct = function (req, res){
     var product = new Product({
-        X
+        name : req.body.name,
+        price : req.body.price,
+        quantity : req.body.quantity,
+        localId : req.body.localId,
+        category : req.body.category
     });
 
     product.save(function(err){
@@ -63,7 +67,7 @@ var updateProduct = function (req, res){
             product.price = req.body.price;
             product.quantity = req.body.quantity;
             product.localId = req.body.localId;
-            product.products = req.body.products;
+            product.category = req.body.category;
             product.save(function(errSaveProduct){
                 if(!errSaveProduct){
                     res.send(product);
