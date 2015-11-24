@@ -8,6 +8,6 @@
     "express": "latest",
     "method-override": "latest",
     "mongoose": "latest",
-    "socket.io": "latest",
+    "socket.io": "latest"
   }
 }
