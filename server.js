@@ -5,7 +5,7 @@ var methodOverride = require("method-override");
 var app = express();
 var io = require("socket.io").listen(3000);
 
-io.socket.on("connection", function(socket){
+io.sockets.on("connection", function(socket){
    socket.on("message", function(){
       console.log("mensaje recibido");
    });
