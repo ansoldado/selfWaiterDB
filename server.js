@@ -3,14 +3,16 @@ var mongoose = require("mongoose");
 var bodyParser = require("body-parser");
 var methodOverride = require("method-override");
 var app = express();
-var io = require("socket.io").listen(3000);
+var server = require("http").Server(app);
+var io = require("socket.io")(server);
 
 io.sockets.on("connection", function(socket){
    socket.on("message", function(){
       console.log("mensaje recibido");
    });
-    console.log("socket conectado");
+    console.log("socket nuevo conectado\n\n\n\n\n");
 });
+console.log(io);
 
 mongoose.connect("mongodb://user:user@ds037814.mongolab.com:37814/heroku_v3hmj82h", function(err, res){
     if(err){
@@ -35,5 +37,5 @@ app.get("/", function(req, res){
 });
 require("./routes")(app);
 
-app.listen(process.env.PORT || 5000);
+server.listen(process.env.PORT || 5000);
 console.log("Server Escuchando en puerto 5000.");

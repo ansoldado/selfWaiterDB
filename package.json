@@ -8,6 +8,8 @@
     "express": "latest",
     "method-override": "latest",
     "mongoose": "latest",
-    "socket.io": "^0.9.17"
+    "socket.io": "latest",
+    "express.io": "latest",
+    "coffee-script": "~1.6.3"
   }
 }
