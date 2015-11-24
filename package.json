@@ -3,11 +3,10 @@
   "version": "0.0.1",
   "description": "Prueba de una API REST para la asignatura de PIN y la aplicacion SelfWaiter.",
   "main": "server.js",
-  "dependencies": {
-    "body-parser": "latest",
+  "dependencies":{
     "express": "latest",
-    "method-override": "latest",
     "mongoose": "latest",
-    "socket.io": "^0.9.17"
+    "body-parser": "latest",
+    "method-override": "latest"
   }
 }
