@@ -27,12 +27,12 @@ app.get("/", function(req, res){
 });
 require("./routes")(app);
 
-var io = require("socket.io").listen(app.listen(5000));
+var io = require("socket.io").listen(app.listen(process.env.PORT || 5000));
 
 io.sockets.on('connection', function (socket) {
     socket.emit('message', { message: 'welcome to the chat' });
     socket.on('send', function (data) {
-        console.log("mesage recibed on send -------------------------");
+        console.log("MENSAJE RECIBIDO ---------------------------------------");
         io.sockets.emit('message', data);
     });
     console.log("ñeeep");
