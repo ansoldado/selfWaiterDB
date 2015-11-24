@@ -9,7 +9,5 @@
     "method-override": "latest",
     "mongoose": "latest",
     "socket.io": "latest",
-    "express.io": "latest",
-    "coffee-script": "~1.6.3"
   }
 }
