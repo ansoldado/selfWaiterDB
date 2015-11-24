@@ -33,7 +33,7 @@ io.sockets.on('connection', function (socket) {
     socket.emit('message', { message: 'welcome to the chat' });
     socket.on('send', function (data) {
         console.log("MENSAJE RECIBIDO ---------------------------------------");
-        io.sockets.emit('message', data);
+        io.sockets.emit('sendServer', data);
     });
     console.log("ñeeep");
 });
