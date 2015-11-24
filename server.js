@@ -3,6 +3,14 @@ var mongoose = require("mongoose");
 var bodyParser = require("body-parser");
 var methodOverride = require("method-override");
 var app = express();
+var io = require("socket.io").listen(3000);
+
+io.socket.on("connection", function(socket){
+   socket.on("message", function(){
+      console.log("mensaje recibido");
+   });
+    console.log("socket conectado");
+});
 
 mongoose.connect("mongodb://user:user@ds037814.mongolab.com:37814/heroku_v3hmj82h", function(err, res){
     if(err){

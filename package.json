@@ -7,7 +7,7 @@
     "express": "latest",
     "mongoose": "latest",
     "body-parser": "latest",
-    "method-override": "latest"
-
+    "method-override": "latest",
+    "socket.io": "latest"
   }
 }
