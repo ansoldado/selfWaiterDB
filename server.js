@@ -33,7 +33,9 @@ io.sockets.on('connection', function (socket) {
     socket.emit('message', { message: 'welcome to the chat' });
     socket.on('send', function (data) {
         io.sockets.emit('table'+data,"Actualizacion de la mesa: "+ data);
-        io.sockets.emit('sendServer'+data,"Mensaje po el socket de la mesa: "+ data);
+        io.sockets.emit('sendServer'+data,"Mensaje por el socket de la mesa: "+ data);
+        io.sockets.emit('sendServer',"Mensaje broadcast: "+ data);
+
     });
     console.log("ñeeep");
 });
