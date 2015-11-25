@@ -32,7 +32,7 @@ var io = require("socket.io").listen(app.listen(process.env.PORT || 5000));
 io.sockets.on('connection', function (socket) {
     socket.emit('message', { message: 'welcome to the chat' });
     socket.on('send', function (data) {
-        console.log("MENSAJE RECIBIDO ---------------------------------------");
+        console.log(data);
         io.sockets.emit('sendServer', data);
     });
     console.log("ñeeep");
