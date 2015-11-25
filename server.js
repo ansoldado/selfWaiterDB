@@ -32,8 +32,8 @@ var io = require("socket.io").listen(app.listen(process.env.PORT || 5000));
 io.sockets.on('connection', function (socket) {
     socket.emit('message', { message: 'welcome to the chat' });
     socket.on('send', function (data) {
-        io.sockets.emit('sendServer',"Mesanje por el socket nomal"+ data);
-        io.sockets.emit('sendServer'+data,"Mensaje po el socket de la mesa"+ data);
+        io.sockets.emit('sendServer',"Mesanje por el socket nomal "+ data);
+        io.sockets.emit('sendServer'+data,"Mensaje po el socket de la mesa "+ data);
     });
     console.log("ñeeep");
 });
