@@ -11,7 +11,7 @@ var productInOrder = new Schema({
     quantity: Number,
     status: {
         type: String,
-        enum: ["Pedido", "En Curso", "Listo", "Servido"]
+        enum: ["Pedido", "En-Curso", "Listo", "Servido"]
     }
 })
 

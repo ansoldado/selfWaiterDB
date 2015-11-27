@@ -31,13 +31,14 @@ var io = require("socket.io").listen(app.listen(process.env.PORT || 5000));
 
 io.sockets.on('connection', function (socket) {
     socket.emit('message', { message: 'welcome to the chat' });
-    socket.on('send', function (data) {
+    socket.on('register', function (data) {
+        console.info("Registrando mesa : "+data);
+        socket.on('table'+data, function(data){
+            io.sockets.emit('table'+data+'camarero', data);
+        });
         io.sockets.emit('table'+data,"Actualizacion de la mesa: "+ data);
-        io.sockets.emit('sendServer'+data,"Mensaje por el socket de la mesa: "+ data);
-        io.sockets.emit('sendServer',"Mensaje broadcast: "+ data);
-
+        io.sockets.emit('reciveFromServer'+data,"Registrado!");
     });
-    console.log("ñeeep");
 });
 
 
