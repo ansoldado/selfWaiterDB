@@ -33,8 +33,9 @@ io.sockets.on('connection', function (socket) {
     socket.emit('message', { message: 'welcome to the chat' });
     socket.on('register', function (data) {
         console.info("Registrando mesa : "+data);
-        socket.on('table'+data, function(data){
-            io.sockets.emit('table'+data+'camarero', data);
+        socket.on('table'+data, function(data2){
+            console.info("enviando por el socket: "+'table'+data+'camarero');
+            io.sockets.emit('table'+data+'camarero', data2);
         });
         io.sockets.emit('table'+data,"Actualizacion de la mesa: "+ data);
         io.sockets.emit('reciveFromServer'+data,"Registrado!");
