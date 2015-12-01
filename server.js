@@ -38,6 +38,7 @@ io.sockets.on('connection', function (socket) {
             io.sockets.emit('table'+data+'camarero', data2);
         });
         socket.on('waiter'+data, function(data2){
+            console.info("ESTA ESCUCHANDO THIS ");
             if(data2.mode == 'modificacion') {
                 io.sockets.emit('reciveFromServer'+data2.mode, 'ticket');
             }else{
