@@ -37,11 +37,10 @@ io.sockets.on('connection', function (socket) {
             console.info("enviando por el socket: "+'table'+data+'camarero');
             io.sockets.emit('table'+data+'camarero', data2);
         });
-        /*
         socket.on('waiter'+data, function(data2){
             console.info("enviando por el socket: "+'waiter'+data);
             io.sockets.emit('waiter'+data+'camarero', data2);
-        });*/
+        });
         io.sockets.emit('table'+data,"Actualizacion de la mesa: "+ data);
         io.sockets.emit('reciveFromServer'+data,"Registrado!");
     });
