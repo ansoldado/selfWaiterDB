@@ -47,7 +47,6 @@ io.sockets.on('connection', function (socket) {
         io.sockets.emit('table'+data,"Actualizacion de la mesa: "+ data);
         io.sockets.emit('reciveFromServer'+data,"Registrado!");
     });
-    socket.on('waiter')
 });
 
 
