@@ -33,12 +33,12 @@ io.sockets.on('connection', function (socket) {
     function registrarOtro(data){
         console.info("ESCUCHANDO EN waiter"+data);
 
-        socket.on('waiter'+data, function(data2){
+        this.socket.on('waiter'+data, function(data2){
             console.info("ESTA ESCUCHANDO THIS ");
             if(data2.mode == 'modificacion') {
-                io.sockets.emit('reciveFromServer'+data2.mode, 'ticket');
+                io.sockets.emit('reciveFromServer'+data2.mesa, 'ticket');
             }else{
-                io.sockets.emit('reciveFromServer'+data2.mode, 'productos');
+                io.sockets.emit('reciveFromServer'+data2.mesa, 'productos');
             }
         });
     }
