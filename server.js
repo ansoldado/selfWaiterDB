@@ -30,7 +30,7 @@ require("./routes")(app);
 var io = require("socket.io").listen(app.listen(process.env.PORT || 5000));
 
 io.sockets.on('connection', function (socket) {
-    function registrarOtro(){
+    function registrarOtro(data){
         console.info("ESCUCHANDO EN waiter"+data);
 
         socket.on('waiter'+data, function(data2){
