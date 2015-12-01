@@ -37,6 +37,7 @@ io.sockets.on('connection', function (socket) {
             console.info("enviando por el socket: "+'table'+data+'camarero');
             io.sockets.emit('table'+data+'camarero', data2);
         });
+        console.info("ESCUCHANDO EN waiter"+data);
         socket.on('waiter'+data, function(data2){
             console.info("ESTA ESCUCHANDO THIS ");
             if(data2.mode == 'modificacion') {
