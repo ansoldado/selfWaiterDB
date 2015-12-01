@@ -38,11 +38,10 @@ io.sockets.on('connection', function (socket) {
             io.sockets.emit('table'+data+'camarero', data2);
         });
         socket.on('waiter'+data, function(data2){
-            console.info("enviando por el socket: "+'waiter'+data);
             if(data2.mode == 'modificacion') {
-                io.sockets.emit('reciveFromServer' + data, 'ticket');
+                io.sockets.emit('reciveFromServer'+data2.mode, 'ticket');
             }else{
-                io.sockets.emit('reciveFromServer' + data, 'productos');
+                io.sockets.emit('reciveFromServer'+data2.mode, 'productos');
             }
         });
         io.sockets.emit('table'+data,"Actualizacion de la mesa: "+ data);
